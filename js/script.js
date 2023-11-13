@@ -14,6 +14,16 @@ function calcolaPrezzo() {
         price = price - (price * 53.27 / 100);
     }
 
-    console.log("il prezzo totale del biglietto è: " + price.toFixed(2) + " €");
+    console.log("Il prezzo totale del biglietto è: " + price.toFixed(2) + " €");
+
+    const bigliettoDiv = document.getElementById("biglietto");
+        bigliettoDiv.style.display = "block";
+        document.getElementById("outputChilometri").innerText = userDistance;
+        document.getElementById("outputEta").innerText = userAge;
+        document.getElementById("outputPrezzo").innerText = price.toFixed(2);
+
+    const calcoloForm = document.getElementById("calcoloform");
+        calcoloForm.style.display = "none";
 }
+
 

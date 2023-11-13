@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <input placeholder="Inserisci i chilometri" id="distance" type="text">
-    <input placeholder="Inserisci l'età" id="age" type="text"> 
+    <div id="calcoloform">  
+       <h1>Calcolatore Prezzo Biglietto</h1>
+       <input placeholder="Inserisci i chilometri" id="distance" type="text">
+       <input placeholder="Inserisci l'età" id="age" type="text"> 
 
-    <button onclick="calcolaPrezzo()">invia</button>
-    
+       <button onclick="calcolaPrezzo()">invia</button>
+
+    </div>   
+
+    <div id="biglietto">
+        <h2>Riepilogo Biglietto</h2>
+        <p><strong>Numero di chilometri:</strong> <span id="outputChilometri"></span></p>
+        <p><strong>Età del passeggero:</strong> <span id="outputEta"></span></p>
+        <p><strong>Prezzo totale:</strong> <span id="outputPrezzo"></span> €</p>
+    </div>
+
+    <div id="risultato"></div>
     <script src="./js/script.js"></script>
 </body>
 </html>
